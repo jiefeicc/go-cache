@@ -3,6 +3,7 @@ package lru
 import "container/list"
 
 // Cache 包含字典和双向链表的结构体类型 Cache，方便实现后续的增删查改操作。
+// lru 缓存淘汰策略
 type Cache struct {
 	// 允许使用的最大内存
 	maxBytes int64
